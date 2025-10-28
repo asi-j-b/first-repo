@@ -1,6 +1,8 @@
 import express from 'express';
 import debug from 'debug';
 import * as server from './config/server.js';
+import { indexRouter } from './routes/index.js';
+import { loginRouter } from './routes/login.js';
 import { dashboardRouter } from './routes/dashboard.js';
 
 // Setup debug module to spit out all messages
@@ -14,6 +16,8 @@ server.setup(app)
 // Register any middleware here
 
 // Register routers here
+app.use('/', indexRouter);
+app.use('/login', loginRouter);
 app.use('/dashboard', dashboardRouter);
 
 // ####################################### No need to modify below this line #######################################
