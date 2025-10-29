@@ -1,4 +1,33 @@
 /* Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    max-width: 500px;
+    width: auto 0;
+}
+
+.container {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Login */
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+
+
+input[type="submit"] {
+    cursor: pointer;
 }

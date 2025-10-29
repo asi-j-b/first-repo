@@ -17,7 +17,7 @@ server.setup(app)
 
 // Register routers here
 app.use('/', indexRouter);
-app.use('/login', loginRouter);
+app.use('/', loginRouter);
 app.use('/dashboard', dashboardRouter);
 
 // ####################################### No need to modify below this line #######################################
